@@ -38,8 +38,6 @@ $("#help_b").click(function() {
   $("#help_page").show();
 });
 
-$("#add_contact").bind('keydown', 'a', f);
-
 /* fancy dialing functions */
 $("#dial_pad button").click(function() {
 	$("#number_input").val($("#number_input").val() + this.innerText);
