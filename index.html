@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <title> Phone Dialer </title>
+    <link rel="stylesheet" href="phone.css">
+  </head>
+  <body>
+    <div class="tab_bar" id="tab_bar">
+      <button class="button" id="dialer"  accesskey="d" role="Open Dialer"> Dialer </button>
+      <button class="button" id="contact_list" accesskey="c" role="Open Contact List"> Contact List </button>
+      <button class="button" id="add_contact" accesskey="a" role="Open Add Contact Page"> Add Contact </button>
+      <button class="button" id="help_b" accesskey="h" role="Open Help Page"> Help </button>
+    </div>
+
+    <div class="page" id="content_dialer" role="Dial Page" aria-live="polite">
+      <h1> Dialer </h1>
+      <form>
+        <input id="number_input">
+      </form>
+      <div id="dial_pad">
+        <div>
+          <button id="1"> 1 </button>
+          <button id="2"> 2 </button>
+          <button id="3"> 3 </button>
+        </div>
+        <div>
+          <button id="4"> 4 </button>
+          <button id="5"> 5 </button>
+          <button id="6"> 6 </button>
+        </div>
+        <div>
+          <button id="7"> 7 </button>
+          <button id="8"> 8 </button>
+          <button id="9"> 9 </button>
+        </div>
+        <div>
+          <button id="*"> * </button>
+          <button id="0"> 0 </button>
+          <button id="#"> # </button>
+        </div>
+      </div>
+      <div id="dialer_controls">
+        <button id="dial"> Dial </button>
+        <button id="clear"> Clear </button>
+      </div>
+    </div>
+
+    <div class="page" id="content_contacts" role="Contact Page" aria-live="polite">
+      <h1> Contacts </h1>
+      <div id="contact_list">
+        <table>
+          <tr>
+            <th scope="col"> Name </th>
+            <th scope="col"> Phone Number </th>
+          </tr>
+          <tr>
+            <td scope="row"> Maddy K </td>
+            <td> (425) 753-8239 </td>
+          </tr>
+          <tr>
+            <td scope="row"> Christopher Boykins </td>
+            <td> (808) 921-3421 </td>
+          </tr>
+          <tr>
+            <td scope="row"> Dorsa Mahmoudmia </td>
+            <td> (206) 891-1207 </td>
+          </tr>
+          <tr>
+            <td scope="row"> Kurt Warner </td>
+            <td> (901) 743-6901 </td>
+          </tr>
+          <tr>
+            <td scope="row"> Seth Green </td>
+            <td> (630) 432-0099 </td>
+          </tr>
+          <tr>
+            <td scope="row"> Kelsey Bates </td>
+            <td> (231) 891-4354 </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class ="page" id ="content_add" role="Add Contact Page" aria-live="polite">
+      <h1> Add Contacts </h1>
+      <form>
+        <label for="name"> Name </label>
+        <input id="name" placeholder="Jane Smithers">
+      </form>
+      <form>
+        <label for="number"> Number </label>
+        <input id="number" placeholder="(206)601-1941">
+      </form>
+      <div>
+        <button id="add"> Add Contact </button>
+      </div>
+    </div>
+
+    <div class="page" id="help_page" role="Help Page" aria-live="polite">
+      <h1> Help </h1>
+      <h3> Acessability Features </h3>
+      <p> This app supports tab control and contains accessible data tables. </p>
+      <table>
+        <caption> Keyboard Shortcuts </caption>
+        <tr>
+          <th scope="col"> Shortcut </th>
+          <th scope="col"> Key Combo </th>
+        </tr>
+        <tr>
+          <td scope="row"> Open Dialer </td>
+          <td> Ctrl+Opt+d </td>
+        </tr>
+        <tr>
+          <td scope="row"> View Contacts </td>
+          <td> Ctrl+Opt+c </td>
+        </tr>
+        <tr>
+          <td scope="row"> Add Contact </td>
+          <td> Ctrl+Opt+a </td>
+        </tr>
+        <tr>
+          <td scope="row"> Get Help </td>
+          <td> Ctrl+Opt+h </td>
+        </tr>
+      </table>
+      <img src="DaBest.jpg" alt="Me and my inspiration" longdesc="A photo of me as a young child posing with a labrador retriever wearing a moose hat and yawning"
+      height=240 width=400>
+      <figcaption> Me and my inspiration </figcaption>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="phone.js"></script>
+  </body>
+</html>

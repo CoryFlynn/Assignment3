@@ -1,0 +1,22 @@
+/* overall */
+body { font-face: sans-serif; margin: 10px;}
+button { border: 1px solid black; background: #ccc; font-size: large;}
+form, p, div { font-family: sans-serif;}
+table, th, tr, td { border: 1px solid black; }
+
+#tab_bar button { width: 140px; margin-right: 5px; height: 30px; border: 1px solid #black; }
+#content {padding: 20px; max-width: 500px;}
+#content h1 {margin-top: 50px; font-size: x-large;}
+
+/* dialer */
+#number_input { font-size: large; text-align: left; width: 30%;}
+#dial_pad button { margin-top: 10px; margin-right: 20px; width: 130px; height: 60px; font-size: x-large; }
+#dialer_controls button { margin-top: 14px; margin-right: 9px; width: 213px; height: 60px; font-size: large; vertical-align: middle; }
+
+/* contact list */
+#content_contacts table { margin-top: 0px; height: 40px;}
+
+/* add contact */
+#content_add_contact label { margin-top: 20px;}
+#content_add_contact button { margin-top: 10px; margin-right: 10px;}
+#content_add_contact input { width: 50px;}
